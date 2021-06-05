@@ -1,4 +1,4 @@
-import anime from './../../node_modules/animejs/lib/anime.es.js';
+// import anime from './../../node_modules/animejs/lib/anime.es.js';
 // const anime = require('./../../node_modules/animejs');
 
 let tl = anime.timeline({
