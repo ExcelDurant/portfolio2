@@ -73,6 +73,7 @@ section,footer {
 
 .full-page {
     width: 100%;
+    overflow: hidden;
 }
 
 .icon-left::before {
@@ -158,6 +159,9 @@ section,footer {
     display        : flex;
     justify-content: space-between;
     align-items    : center;
+    opacity: 0;
+    transition: 3s opacity;
+    transition-timing-function: ease-in-out;
 
     i {
         font-size: 20px;
@@ -267,10 +271,12 @@ section,footer {
     margin          : 0 auto;
     display         : flex;
     margin-top      : 100px;
-    margin-bottom   : 50px;
     background-color: $lightBlue;
     border-radius   : 100px;
     overflow        : hidden;
+    transform: translateY(500px);
+    transition: 1s opacity, 2s transform;
+    opacity: 0;
 
     .img-container {
         width     : 30%;
@@ -324,7 +330,7 @@ section,footer {
     }
 
     @include mqx(1000px) {
-        width: 95%;
+        width: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         .img-container {
@@ -387,6 +393,8 @@ section,footer {
     .txt-container {
         position     : relative;
         margin-bottom: 40px;
+        opacity: 0;
+        transition: 1.5s opacity;
 
         .bg-title {
             position     : relative;
@@ -531,6 +539,8 @@ section,footer {
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
+        opacity: 0;
+        transition: 1.5s opacity;
 
         .work-card {
             width: 300px;
@@ -596,11 +606,17 @@ section,footer {
         width: 48%;
         display: flex;
         flex-wrap: wrap;
+        opacity: 0;
+        transition: 1.5s opacity;
 
         .icon-container {
             width: 70px;
             height: auto;
             margin: 20px;
+            transition: 1.5s transform;
+            &:hover {
+                transform: rotate(360deg);
+            }
         }
     }
     .txt-container {
@@ -747,6 +763,8 @@ section,footer {
             padding: 40px;
             background-color: white;
             margin-bottom: 50px;
+            opacity: 0;
+            transition: 1.5s opacity;
 
             .contact-form {
                 width: 100%;
