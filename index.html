@@ -29,16 +29,24 @@
                     <h2 class="logo-txt">g-e</h2>
                 </div>
                 <ul class="navlist" id="navlist1">
-                    <li><a href="#" class="navlink">excel</a></li>
-                    <li><a href="#" class="navlink">services</a></li>
-                    <li><a href="#" class="navlink">portfolio</a></li>
-                    <li><a href="#" class="navlink">tools</a></li>
-                    <li><a href="#" class="navlink">contact</a></li>
+                    <li><a href="#excel" class="navlink">excel</a></li>
+                    <li><a href="#service" class="navlink">services</a></li>
+                    <li><a href="#portfolio" class="navlink">portfolio</a></li>
+                    <li><a href="#tools" class="navlink">tools</a></li>
+                    <li><a href="#contact" class="navlink">contact</a></li>
+                    <li><button onclick="showNav()"><i class="fas fa-bars menu"></i></button></li>
                 </ul>
             </nav>
+            <ul class="mobile-navlist">
+                <li><a href="#excel" class="navlink">excel</a></li>
+                <li><a href="#service" class="navlink">services</a></li>
+                <li><a href="#portfolio" class="navlink">portfolio</a></li>
+                <li><a href="#tools" class="navlink">tools</a></li>
+                <li><a href="#contact" class="navlink">contact</a></li>
+            </ul>
         </header>
 
-        <section class="home-sec">
+        <section class="home-sec" id="home">
             <div class="home-container">
                 <div class="txt-container">
                     <div class="overlay">
@@ -67,7 +75,7 @@
             </div>
         </section>
 
-        <section class="excel-sec">
+        <section class="excel-sec" id="excel">
             <div class="excel-container">
                 <div class="img-container">
                     <img src="./assets/img/profile.png" alt="" class="full-img">
@@ -93,7 +101,7 @@
             </div>
         </section>
 
-        <section class="service-sec">
+        <section class="service-sec" id="service">
             <div class="service-container">
                 <div class="txt-container">
                     <h2 class="bg-title">my <br>services</h2>
@@ -136,7 +144,7 @@
             </div>
         </section>
 
-        <section class="portfolio-sec">
+        <section class="portfolio-sec" id="portfolio">
             <div class="portfolio-container">
                 <div class="txt-container">
                     <h2 class="bg-title">my <br>portfolio</h2>
@@ -189,7 +197,7 @@
             </div>
         </section>
 
-        <section class="tools-sec">
+        <section class="tools-sec" id="tools">
             <div class="tools-container">
                 <div class="icons-container">
                     <div class="icon-container"><img src="./assets/img/html.png" alt="" class="full-img"></div>
@@ -220,7 +228,7 @@
             </div>
         </section>
 
-        <section class="contact-sec">
+        <section class="contact-sec" id="contact">
             <div class="contact-container">
                 <h2 class="bg-title">connect <br> with me</h2>
                 <div class="overlay">
@@ -270,11 +278,11 @@
                             class="icon-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <ul class="navlist">
-                        <li><a href="#" class="navlink">excel</a></li>
-                        <li><a href="#" class="navlink">services</a></li>
-                        <li><a href="#" class="navlink">portfolio</a></li>
-                        <li><a href="#" class="navlink">tools</a></li>
-                        <li><a href="#" class="navlink">contact</a></li>
+                        <li><a href="#excel" class="navlink">excel</a></li>
+                        <li><a href="#service" class="navlink">services</a></li>
+                        <li><a href="#portfolio" class="navlink">portfolio</a></li>
+                        <li><a href="#tools" class="navlink">tools</a></li>
+                        <li><a href="#contact" class="navlink">contact</a></li>
                     </ul>
                 </nav>
                 <div class="seperation"></div>
@@ -286,7 +294,9 @@
     </div>
 
     <!-- <script src="anime.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/scripts/animations.js"></script>
 </body>
 

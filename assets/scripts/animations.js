@@ -6,6 +6,7 @@ let service = document.querySelector('.service-container');
 let works = document.querySelector('.works-grid');
 let tools = document.querySelector('.tools-container .icons-container');
 let contact = document.querySelector('.form-container');
+let mobileNav = document.querySelector('.mobile-navlist');
 let excelOffset = excel.getBoundingClientRect().top - 700;
 let serviceOffset = service.getBoundingClientRect().top + 200;
 let worksOffset = works.getBoundingClientRect().top - 400;
@@ -24,7 +25,7 @@ tl.add({
 })
 
 .add({
-    targets: '#navlist1 a',
+    targets: '#navlist1',
     translateX: 0
 })
 
@@ -84,11 +85,9 @@ function scrollFunction() {
     let w = window.scrollY;
     console.log(w, excelOffset);
     if(w >= excelOffset) {
-        console.log("equals");
         scrollMe.play();
     }
     if(w >= serviceOffset) {
-        console.log("equals2");
         scrollMe2.play();
     }
     if(w >= worksOffset) {
@@ -102,6 +101,6 @@ function scrollFunction() {
     }
 }
 
-// icons.addEventListener('mouseover', ()=>{
-
-// })
+function showNav() {
+    mobileNav.classList.toggle('show-mobile-nav');
+}
