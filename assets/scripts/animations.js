@@ -1,5 +1,4 @@
-// import anime from './../../node_modules/animejs/lib/anime.es.js';
-// const anime = require('./../../node_modules/animejs');
+
 
 let excel = document.querySelector('.excel-container');
 let service = document.querySelector('.service-container');
@@ -83,7 +82,7 @@ let scrollMe5 = anime({
 
 function scrollFunction() {
     let w = window.scrollY;
-    console.log(w, excelOffset);
+    // console.log(w, excelOffset);
     if(w >= excelOffset) {
         scrollMe.play();
     }
