@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="hi, my name is Excel Durant. I am a 20 year old aspiring Full-Stack Web developer. Born in Cameroon, I am currently in my second year of studies in the field of Web development.">
+        content="hi, my name is Excel Durant. As a 22-year-old full-stack web developer with 2 years of experience, I possess a solid understanding of front-end and back-end web development technologies such as HTML, CSS, JavaScript, Node.js, and SQL. I have successfully completed several projects, including e-commerce websites, mobile applications, and web applications with real-time updates. With excellent communication and problem-solving skills, I am a quick learner and thrive in a team environment. I am passionate about delivering high-quality results that exceed client expectations and am always seeking to learn and improve my skills.">
+        <link rel="icon" type="image/x-icon" href="/assets/img/me.ico">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -29,9 +30,9 @@
     <div class="full-page">
         <header class="header">
             <nav class="navbar">
-                <div class="logo-container" id="logo-container1">
+                <a href="#excel" class="logo-container" id="logo-container1">
                     <h2 class="logo-txt">g-e</h2>
-                </div>
+                </a>
                 <ul class="navlist" id="navlist1">
                     <li><a href="#excel" class="navlink">excel</a></li>
                     <li><a href="#service" class="navlink">services</a></li>
@@ -93,12 +94,7 @@
                             hi, my name is <br> Excel Durant
                         </h2>
                         <p class="txt">
-                            I am a 20 years old aspiring Full-Stack Web developer. Born in Cameroon, I am currently in
-                            my second year of studies in the field of Web development. I have always had intense love
-                            with everything related to computers since I was a kid. It was only natural that I take this
-                            path as the opportunity was given to me. I am currently trying to acquire some experiences
-                            in order to sharpen my skills and be more competitive in the Web development market. I am
-                            always willing and excited to learn new things in Computer Programming.
+                            As a 22-year-old full-stack web developer with 2 years of experience, I possess a solid understanding of front-end and back-end web development technologies such as HTML, CSS, JavaScript, Node.js, and SQL. I have successfully completed several projects, including e-commerce websites, mobile applications, and web applications with real-time updates. With excellent communication and problem-solving skills, I am a quick learner and thrive in a team environment. I am passionate about delivering high-quality results that exceed client expectations and am always seeking to learn and improve my skills.
                             
                         </p>
                     </div>
@@ -186,15 +182,15 @@
                             <img src="./assets/img/meubles.png" alt="">
                         </div>
                     </a>
-                    <a href="https://www.sabitoorenter.org/" target="_blank" class="work-card-link">
+                    <a href="https://skyarcard.netlify.app/" target="_blank" class="work-card-link">
                         <div class="work-card">
-                            <img src="./assets/img/sabitoo.png" alt="Sabitoo Renter">
+                            <img src="./assets/img/skyarcard.png" alt="Sabitoo Renter">
                         </div>
                     </a>
-                    <a href="https://drmmfoundation.com/" target="_blank"
+                    <a href="https://dalle-imaginer.netlify.app/" target="_blank"
                         class="work-card-link">
                         <div class="work-card">
-                            <img src="./assets/img/drmm.png" alt="">
+                            <img src="./assets/img/imaginer.png" alt="">
                         </div>
                     </a>
                 </div>
@@ -217,8 +213,11 @@
                     <div class="icon-container"><img src="./assets/img/node.png" alt="nodejs logo" class="full-img"></div>
                     <div class="icon-container"><img src="./assets/img/mongo.png" alt="mongodb logo" class="full-img"></div>
                     <div class="icon-container"><img src="./assets/img/mysql.png" alt="mysql logo" class="full-img"></div>
+                    <div class="icon-container"><img src="./assets/img/Postgresql_elephant.png" alt="laravel logo" class="full-img"></div>
                     <div class="icon-container"><img src="./assets/img/flutter_logo.png" alt="flutter logo" class="full-img"></div>
                     <div class="icon-container"><img src="./assets/img/laravel.png" alt="laravel logo" class="full-img"></div>
+                    <div class="icon-container"><img src="./assets/img/Git-Icon-1788C.png" alt="laravel logo" class="full-img"></div>
+                    <div class="icon-container"><img src="./assets/img/Moby-logo.webp" alt="laravel logo" class="full-img"></div>
                 </div>
                 <div class="txt-container">
                     <h2 class="bg-title">tools<br>I use</h2>
@@ -226,8 +225,7 @@
                         <div class="logo"></div>
                         <h3 class="title">tools</h3>
                         <p class="txt">
-                            The bulk of my work is undoubtedly on Front-End.
-                            Nevertheless I still boast of a lot of backend experience.
+                            I boast of a lot of frontend and backend experience ranging across multiple tools, languages and frameworks. This comes from my never ending passion to learn.
                         </p>
                     </div>
                 </div>
@@ -293,7 +291,7 @@
                 </nav>
                 <div class="seperation"></div>
                 <div class="copyright-container">
-                    <h3 class="copyright-txt">Copyright 2021 gnopa-excel.com</h3>
+                    <h3 class="copyright-txt">Copyright <span id="year">2023</span> <a class="web-link" href="https://gnopaexcel.com/" target="_BLANK">gnopaexcel.com</a></h3>
                 </div>
             </div>
         </footer>
@@ -310,6 +308,9 @@
         gtag('js', new Date());
 
         gtag('config', 'G-Y8S3TWJ22X');
+
+        let yearSpan = document.querySelector('#year');
+        yearSpan.innerText = (new Date()).getFullYear();
     </script>
 </body>
 
